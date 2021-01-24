@@ -33,17 +33,18 @@
     </div>
 
     <div class="columns is-mobile is-multiline" :class="$style.wrap">
-      <div style="color: #fff !important" class="column is-full title">Кто к вам приедет?</div>
+      <div style="color: #fff !important" class="column is-full title">Контакты</div>
 
       <div class="column is-half-desktop is-full-mobile" :class="$style.info">
         <figure class="image is-128x128">
           <img
             :class="$style.img"
-            src="https://sun9-19.userapi.com/impf/c625827/v625827259/21a19/kmH4UjQegbs.jpg?size=960x960&quality=96&proxy=1&sign=4b9e5bba3761934ba5e9cee7d5f9ce6a&type=album"/>
+            src="https://i.ibb.co/DQ4MQLh/Whats-App-Image-2021-01-23-at-00-59-35.jpg"/>
         </figure>
 
         <div :class="$style.id">
           <p :class="$style.id__name">Поляков Никита</p><p :class="$style.id__subName">Ваш Мастер</p>
+
         </div>
       </div>
       <div class="column is-half-desktop is-full-mobile">
@@ -86,7 +87,7 @@ export default {
         from: this.name,
         subject: this.name,
         text: this.phone,
-        to: "olgabogdanovanew@gmail.com",
+        to: "bettercallnik@gmail.com",
       });
       this.send = true;
       // console.log(this.send)

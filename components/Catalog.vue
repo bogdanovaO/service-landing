@@ -101,7 +101,9 @@ computed: {
   top: 30px
 .buttonArrow
  font-size: 30px
- margin: 50px 0 0
+ margin: 25px 0 0
+ &:hover
+  color: #00d1b2
 .item
  width: 400px
  text-align: left
@@ -123,6 +125,10 @@ computed: {
   padding: 64px 72px
   box-sizing: border-box
   z-index: 4
+  @include respondTo(phones)
+    width: 100%
+    right: 0
+    border-radius: 0
   &__name
    font-size: calc(12px + 0.5vw)
    font-weight: bold
@@ -135,7 +141,7 @@ computed: {
    font-weight: bold
    @include respondTo(phones)
      width: 100%
-     margin-top: 7pxnpm i vue2-perfect-scrollbar
+     margin-top: 7px
   &__desc
     font-size: calc(8px + 0.5vw)
   &__modal__nameWrap
@@ -146,14 +152,8 @@ computed: {
 .wrap 
  padding-top: 100px
  box-sizing: border-box
- ////////
  @include respondTo(phones)
   padding: 50px 0 100px
-// .title
-//  margin: 0 0 60px 0!important
-//  @include respondTo(phones)
-//   margin: 0 0 30px 0
-//   margin-left: 12vw
 .catalogGroup
  display: flex
  flex-direction: column
@@ -175,7 +175,7 @@ computed: {
 
 .name
  font-size: calc(11px + 0.5vw)
- margin: 20px 0 15px
+ margin: 20px 0 5px
  font-family: 'Montserrat', sans-serif
  font-weight: bold
 .desc

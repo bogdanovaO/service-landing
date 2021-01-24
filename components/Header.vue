@@ -16,6 +16,7 @@
                   margin-right: 15px;
                 "/>
               <div style="height: 35px; width: 12px; background: #00d1b2" />
+
             </div>
             <vue-typed-js
               class="is-hidden-mobile"

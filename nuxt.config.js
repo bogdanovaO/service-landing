@@ -1,22 +1,18 @@
-export default {
-  // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
-  // mode: 'universal',
-  target: 'server',
-  ssr: true,
+module.exports = {
+  mode: 'universal',
+  target: 'static',
+
   server: {
     port: 5000,
     host: "localhost"
   },
-  env: {
-    baseUrl: process.env.BASE_URL,
-    tinyKey: process.env.TINY_KEY
-  },
-  // Target (https://go.nuxtjs.dev/config-target)
-  // target: 'static',
 
-  // Global page headers (https://go.nuxtjs.dev/config-head)
+  // env: {
+  //   baseUrl: process.env.BASE_URL,
+  //   tinyKey: process.env.TINY_KEY
+  // },
   head: {
-    title: 'service-landing',
+    htmlAttrs: { lang: "ru" },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -27,7 +23,6 @@ export default {
     ]
   },
 
-  // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
   ],
 
@@ -35,19 +30,14 @@ export default {
   plugins: [
   ],
 
-  // Auto import components (https://go.nuxtjs.dev/config-components)
-  components: true,
-
-  // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
-    // '@nuxtjs/style-resources',
     '@nuxtjs/fontawesome'
   ],
   fontawesome: {
     component: 'fa',
     icons: {
-      solid: ['faUserCog','faSearch','faRubleSign', 'faPhone', "faArrowRight"],
-      brands: ['faVk',  'faWhatsapp', 'faInstagram', 'faYoutube']
+      solid: ['faSearch','faRubleSign', 'faPhone', "faArrowRight"],
+      brands: ['faVk',   'faInstagram', 'faYoutube']
     }
   },
 
@@ -64,8 +54,8 @@ export default {
         service: 'Gmail',
         secure: true,
         auth: {
-        user: 'olgabogdanovanew@gmail.com',
-        pass: 'nikilauda',
+        user: 'bettercallnik@gmail.com',
+        pass: 'Zhopapopa229',
       }
       },
     },
@@ -73,17 +63,16 @@ export default {
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  // build: {
-  //   postcss: {
-  //     preset: {
-  //       features: {
-  //         customProperties: false
-  //       }
-  //     }
-  //   },
-  // }
   build: {
-    extend(config, ctx) {
-    }
-  }
+    optimizeCss: false,
+    // filenames: {
+    //   app:  'js/[contenthash].js',
+    //   chunk: 'js/[contenthash].js',
+    //   css: 'css/[contenthash].css',
+    //   font: 'fonts/[contenthash:7].[ext]',
+    //   video:  'videos/[contenthash:7].[ext]'
+    // }
+
+
+}
 }

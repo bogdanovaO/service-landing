@@ -9,7 +9,7 @@
             <div :class="$style.subTitle">Не компания</div>
           </div>
 
-          <div :class="$style.desc">Я часnysq мастер и лично отвечаю за репутацию своей компании</div>
+          <div :class="$style.desc">Я частный мастер и лично отвечаю перед вами за качество проделанной работы.</div>
         </div>
       </div>
       <div class="column" :class="$style.column">
@@ -19,7 +19,7 @@
             <div :class="$style.subTitle">Бесплатная диагностика</div>
           </div>
 
-          <div :class="$style.desc">Я проведу у вас диагностику и составлю план решения проблемы</div>
+          <div :class="$style.desc">Я проведу у вас бесплатную диагностику и составлю план решения проблемы.</div>
         </div>
       </div>
       <div class="column" :class="$style.column">
@@ -29,8 +29,8 @@
             <div :class="$style.subTitle">Приятные цены</div>
           </div>
           <div :class="$style.desc">
-            Так как я работаю с вами на прямую и не плачу процент компании мои
-            цены ниже рыночных
+            Я работаю с вами на прямую и не плачу процент компании, поэтому мои
+            цены ниже рыночных.
           </div>
         </div>
       </div>

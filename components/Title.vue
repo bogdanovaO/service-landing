@@ -14,7 +14,9 @@
           компьютеров, мобильных устройств и установкой/настройкой различной.
         </div>
         <div :class="$style.desc" style="margin-top: 10px; font-weight: bold">
-          Если вы не нашли нужную вам информацию - позвоните мне! :)
+          <p>Если вы не нашли нужную вам информацию - позвоните мне! :)</p><br/>
+          <a :class="$style.nmbr" href="tel:+79251249327">+7 (977) 177-95-41
+</a>
         </div>
 
         <div :class="$style.clear"></div>
@@ -43,7 +45,9 @@ export default {
     padding: 0
     background: none
 
-    
+.nmbr
+  font-size: 20px
+  color: #fff
 
 .dark
   display: none

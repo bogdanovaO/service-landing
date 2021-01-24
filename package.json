@@ -29,6 +29,7 @@
     "sass-loader": "^8.0.2",
     "svg-loader": "0.0.2",
     "tls": "0.0.1",
+    "vue-img-loader": "^1.0.0",
     "vue-scrollto": "^2.20.0",
     "vue-svg-loader": "0.11.0",
     "vue-typed-js": "^0.1.2",
