@@ -33,7 +33,7 @@
     </div>
 
     <div class="columns is-mobile is-multiline" :class="$style.wrap">
-      <div style="color: #fff !important" class="column is-full title">Контакты</div>
+      <div style="color: #fff !important" class="column is-full title">Немного обо мне</div>
 
       <div class="column is-half-desktop is-full-mobile" :class="$style.info">
         <figure class="image is-128x128">
@@ -49,10 +49,8 @@
       </div>
       <div class="column is-half-desktop is-full-mobile">
         <div :class="$style.desc">
-          "Я люблю работать с техникой, за моей страницей не скрывается компания
-          с десятками мастеров которые ни за что не отвечают, я лично приеду
-          провести вам бесплатную диагностику и опишу вам фронт работ, назову
-          окончательный ценник."
+          "Работаю с электроникой с детства и постоянно повышаю уровень квалификации. Знаю как решить любые проблемы с компьютерами и гаджетами недорого. 
+Через мои руки прошли несколько тысяч устройств, которые до сих пор радуют своих хозяев."
         </div>
       </div>
     </div>
