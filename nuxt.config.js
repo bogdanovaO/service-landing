@@ -1,11 +1,15 @@
 module.exports = {
   mode: 'universal',
-  target: 'static',
+  target: 'server',
+  ssr: true,
+  // serverMiddleware: [
+  //   '~/mail/send'
+  // ],
 
-  server: {
-    port: 5000,
-    host: "localhost"
-  },
+  // server: {
+  //   port:  443,
+  //   host: "46.4.69.15"
+  // },
 
   // env: {
   //   baseUrl: process.env.BASE_URL,
@@ -40,7 +44,9 @@ module.exports = {
       brands: ['faVk',   'faInstagram', 'faYoutube']
     }
   },
-
+  proxy: {
+    'prefix': 'url'
+  },
   modules: [
     '@nuxtjs/bulma',
     'vue-scrollto/nuxt',
@@ -55,7 +61,7 @@ module.exports = {
         secure: true,
         auth: {
         user: 'bettercallnik@gmail.com',
-        pass: 'Zhopapopa229',
+        pass: 'Zhopapopa229'
       }
       },
     },

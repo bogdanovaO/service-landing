@@ -81,12 +81,18 @@ export default {
   // },
   methods: {
     sendForm() {
-      this.$axios.$post("/mail/send", {
-        from: this.name,
-        subject: this.name,
-        text: this.phone,
-        to: "bettercallnik@gmail.com",
-      });
+//       this.$mail.send({
+//         from: this.name,
+//         subject: this.name,
+//         text: this.phone,
+//   to: 'bettercallnik@gmail.com',
+// })
+this.$axios.$post('/mail/send', {
+  from: this.name,
+  subject: this.name,
+  text: this.phone,
+  to: 'bettercallnik@gmail.com',
+})
       this.send = true;
       // console.log(this.send)
     },
